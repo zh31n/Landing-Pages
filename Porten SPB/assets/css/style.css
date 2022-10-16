@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+}
+
+    /* Часть выше хедера */
+
+.up-sec {
+    background-color: black;
+    color: grey;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+.up-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+
+
+.up-job {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 100%;
+    
+}
+
+.up-log {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+}
+
+.up-log img {
+    height: 14px;
+    width: 14px;
+}
+
+        /* header */
+
+.header {
+    background: #0F0F0F;
+    height: 80px;
+    width: 100%;
+    color: white;
+}
+
+.logo {
+    font-family: 'Post No Bills Jaffna';
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.buttons {
+    height: 100%;
+    width: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons h1 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto;
+}
+
+.buttons:hover {
+    background: #1F1F1F;
+    cursor: pointer;
+}
+
+/* intro */
+
+.intro {
+    background-image: url('../images/itro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 810px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo_intro {
+    border: 4px solid white;
+    width: 320px;
+    height: 320px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.logo_txt {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid white;
+    line-height: 40px;
+
+}
+
+.int_log {
+    height: 86px;
+    width: 185px;
+}
+
+.intro_txt {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+/* next section (seasons) */
+
+.seasons {
+    height: 730px;
+    width: 100%;
+    background: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bl_right {
+    background-image: url('../images/coll.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.line {
+    width: 120px;
+    height: 1px;
+    background-color: white;
+    margin: 5% auto;
+}
+
+.bl_left,.bl_right {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}
+
+.title_seas {
+    font-family: 'Playfair Display', serif;
+    margin-top: 10%;
+}
+
+/* block left  */
+
+.time-img {
+    width: 260px;
+    height: 325px;
+    background: #191B1C;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.time-watch {
+    display: flex;
+    justify-content: space-around;
+    
+    text-align: left;
+}
+
+.watch_img {
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.info-pr p{
+    font-family: 'Playfair Display', serif;
+    margin-top: 5%;
+}
+
+
+/* block right */
+
+.col-title {
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+
+.button-catalog {
+    border: 1px solid white;
+    height: 47px;
+    width: 138px;
+    padding: 12px 28px 12px 28px;
+    margin: auto;
+
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button-catalog:hover {
+    background: rgba(31, 31, 31, 0.502);
+    cursor: pointer;
+}
+
+.left-inner {
+    margin-top: 45%;
+}
+
+        /* collections */
+
+.info-call .line {
+    margin: 5% auto;
+}
+
+.new-call {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    
+}
+
+
+.left-call {
+    background-image: url('../images/greyback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+}
+
+.right-call {
+    width: 55%;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+}
+
+.info-call {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-coll {
+    border: 1px solid white;
+    width: 310px;
+    height: 50px;
+    text-align: center;
+    margin: 5% auto;
+
+    padding: 1%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+        /* new products */
+
+.new-prts {
+    height: 1289px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.img-pr {
+    background-color: #191B1C;
+    height: 295px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bl_pr {
+    width: 230px;
+    height: 405px;
+    color: white;
+    text-align: left;
+}
+
+.product-str {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 100%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* BRANDS */
+
+.brands {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 360px;
+    background: #0F0F0F
+}
+
+.brand-inner {
+    padding-top: 5%;
+}
+
+.brands-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-brand {
+    height: 95px;
+    width: 250px;
+    background-image: url('../images/brands.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* footer */
+
+.footer {
+    background-image: url('../images/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 400px;
+    width: 100%;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    color: white;
+    padding-top: 5%;
+}
+
+.foot-us {
+    width: 350px;
+    text-align: left;
+    margin-top: 20%;
+}
+
+.foot-sup-us {
+    padding-top: 15%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* foot cat */
+
+.foot-cat {
+    width: 280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-foot {
+    background-color: #0F0F0F;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.btns-foot {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    height: 80px;
+    margin-top: 15%;
+}
+
+.bl-fot1,.bl-fot2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0 0 0;
+}
+
+
+.btn-foot a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* foot email */
+
+.foot_email {
+    width: 350px;
+}
+
+.foot-inf {
+    height: 42px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.input-foot {
+    width: 210px;
+    height: 42px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.503);
+    border: 0;
+}
+
+.button-foot {
+    background: #0F0F0F;
+    color: white;
+    width: 140px;
+    height: 42px;
+    border: 0;
+    cursor: pointer;
+}
+
+.foot-sup-us {
+    padding-top: 15%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
