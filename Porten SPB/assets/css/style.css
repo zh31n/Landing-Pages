@@ -20,16 +20,34 @@ h1 {
     max-width: 1100px;
 }
 
-    /* Часть выше хедера */
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+
+
+
+
+/* Часть выше хедера */
 
 .up-sec {
     background-color: black;
     color: grey;
     width: 100%;
     height: 50px;
-    font-size: 14px;
-    line-height: 16px;
-    
+    font-size: 90%;
+
 }
 
 .up-section {
@@ -41,30 +59,36 @@ h1 {
     width: 100%;
 }
 
+.up-info {
+    width: 37%;
+    height: 100%;
+}
+
 
 
 .up-job {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    align-items: center;
+    width: 100%;
     height: 100%;
-    
+
 }
 
 .up-log {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
+    width: 15%;
     height: 100%;
 }
 
 .up-log img {
-    height: 14px;
-    width: 14px;
+    height: auto;
+    width: 15%;
 }
 
-        /* header */
+/* header */
 
 .header {
     background: #0F0F0F;
@@ -73,11 +97,6 @@ h1 {
     color: white;
 }
 
-.logo {
-    font-family: 'Post No Bills Jaffna';
-    font-size: 36px;
-    font-weight: 700;
-}
 
 .sec-header {
     display: flex;
@@ -87,20 +106,27 @@ h1 {
     height: 80px;
 }
 
+.logo {
+    font-family: 'Post No Bills Jaffna';
+    font-size: 36px;
+    font-weight: 700;
+    width: 15%;
+}
+
 .nav-btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 50%;
+    width: 60%;
 }
 
 .buttons {
     height: 100%;
-    width: 130px;
+    width: 25%;
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 100%;
     display: flex;
     justify-content: center;
 }
@@ -115,6 +141,32 @@ h1 {
 .buttons:hover {
     background: #1F1F1F;
     cursor: pointer;
+}
+
+@media (max-width: 607px) {
+
+    .up-job,
+    .up-log {
+        font-size: 7px;
+    }
+
+    .col-title1 {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .nav-btns {
+        font-size: 8px;
+    }
+
+    .buttons h1 {
+        font-size: 8px;
+    }
+
+    .buttons {
+        font-size: 8px;
+    }
 }
 
 /* intro */
@@ -133,7 +185,7 @@ h1 {
 
 .logo_intro {
     border: 4px solid white;
-    width: 320px;
+    width: 70%;
     height: 320px;
     color: white;
     display: flex;
@@ -156,7 +208,7 @@ h1 {
 
 .int_log {
     height: 86px;
-    width: 185px;
+    width: 70%;
 }
 
 .intro_txt {
@@ -173,14 +225,17 @@ h1 {
 
 /* next section (seasons) */
 
+
+
 .seasons {
-    height: 730px;
     width: 100%;
     background: #000000;
     color: white;
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .bl_right {
     background-image: url('../images/coll.jpg');
@@ -189,13 +244,16 @@ h1 {
 }
 
 .line {
-    width: 120px;
+    width: 20%;
     height: 1px;
     background-color: white;
     margin: 5% auto;
 }
 
-.bl_left,.bl_right {
+
+
+.bl_left,
+.bl_right {
     height: 100%;
     width: 50%;
     text-align: center;
@@ -203,25 +261,35 @@ h1 {
 
 .title_seas {
     font-family: 'Playfair Display', serif;
-    margin-top: 10%;
+    padding-top: 2%;
 }
 
 /* block left  */
 
 .time-img {
-    width: 260px;
-    height: 325px;
+    width: 100%;
+    height: 250px;
     background: #191B1C;
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
+
+
 .time-watch {
     display: flex;
     justify-content: space-around;
-    
+    width: 100%;
+    height: 100%;
+
     text-align: left;
+}
+
+.block_watch {
+    height: 100%;
+    width: 25%;
+
 }
 
 .watch_img {
@@ -229,12 +297,22 @@ h1 {
     display: flex;
     align-content: center;
     justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
-.info-pr p{
-    font-family: 'Playfair Display', serif;
-    margin-top: 5%;
+.info-pr {
+    height: 10%;
+    width: 100%;
 }
+
+.info-pr p {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    padding-top: 5%;
+}
+
+
 
 
 /* block right */
@@ -245,6 +323,11 @@ h1 {
     font-size: 36px;
 }
 
+.bl_right {
+    height: 500px;
+    /* margin-top: 5%; */
+}
+
 .button-catalog {
     border: 1px solid white;
     height: 47px;
@@ -252,11 +335,8 @@ h1 {
     padding: 12px 28px 12px 28px;
     margin: auto;
 
-    font-family: PT Sans;
     font-size: 18px;
     font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
 }
@@ -267,10 +347,38 @@ h1 {
 }
 
 .left-inner {
-    margin-top: 45%;
+    padding-top: 30%;
 }
 
-        /* collections */
+@media (max-width:650px){
+    .seasons {
+        display: block;
+    }
+
+    .left-inner{
+        padding-top: 0%;
+    }
+
+    .col-title{
+        font-size: 20px;
+    }
+    
+    .time-img{
+        height: auto;
+    }
+    
+    .info-pr p{
+        font-size: 10px;
+    }
+
+    .bl_left,
+    .bl_right{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* collections */
 
 .info-call .line {
     margin: 5% auto;
@@ -280,8 +388,8 @@ h1 {
     display: flex;
     width: 100%;
     height: 600px;
-    
 }
+
 
 
 .left-call {
@@ -309,10 +417,18 @@ h1 {
     flex-direction: column;
 }
 
+.col-title1 {
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
 .button-coll {
     border: 1px solid white;
-    width: 310px;
+    width: 40%;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin: 5% auto;
 
@@ -321,10 +437,24 @@ h1 {
     text-transform: uppercase;
 }
 
-        /* new products */
+@media (max-width:1000px) {
+    .new-call{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-call{
+        width: 100%;
+    }
+
+    .right-call{
+        width: 100%;
+    }
+}
+
+/* new products */
 
 .new-prts {
-    height: 1289px;
+    height: 100%;
     width: 100%;
     background-color: #000000;
     color: white;
@@ -334,17 +464,21 @@ h1 {
 
 .img-pr {
     background-color: #191B1C;
-    height: 295px;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+
+.imgPrr {
+    width: 100%;
+    height: auto;
 }
 
 .bl_pr {
-    width: 230px;
-    height: 405px;
+    width: 20%;
+    height: 100%;
     color: white;
     text-align: left;
 }
@@ -352,11 +486,27 @@ h1 {
 .product-str {
     display: flex;
     align-items: center;
-    width: 1000px;
-    height: 100%;
-    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    justify-content: space-around;
     margin: auto;
+    padding-bottom: 10%;
 }
+
+@media (max-width: 767px) {
+    .product-str {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .img-pr{
+        height: 100px;
+    }
+}
+
+
+
 
 /* BRANDS */
 
@@ -364,27 +514,33 @@ h1 {
     text-align: center;
     color: white;
     width: 100%;
-    height: 360px;
-    background: #0F0F0F
+    height: 30%;
+    background: #0F0F0F;
+
 }
 
 .brand-inner {
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .brands-img {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.logoFine{
+    width: 100%;
+    height: auto;
 }
 
 .logo-brand {
     height: 95px;
-    width: 250px;
-    background-image: url('../images/brands.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    width: 25%;
 }
+
 
 /* footer */
 
@@ -397,17 +553,24 @@ h1 {
     width: 100%;
 }
 
+
+
+.footer .col-title{
+    font-size: 25px;
+}
+
 .footer-inner {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 400px;
+    height: 100%;
     color: white;
     padding-top: 5%;
 }
 
 .foot-us {
-    width: 350px;
+    height: 100%;
+    width: 30%;
     text-align: left;
     margin-top: 20%;
 }
@@ -421,8 +584,8 @@ h1 {
 
 /* foot cat */
 
-.foot-cat {
-    width: 280px;
+.foot_cat {
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -431,27 +594,30 @@ h1 {
 .btn-foot {
     background-color: #0F0F0F;
     text-decoration: none;
+    display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 4% 5%;
 
 }
 
 .btns-foot {
     display: flex;
     flex-direction: column;
-    width: 275px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     margin-top: 15%;
 }
 
-.bl-fot1,.bl-fot2 {
+.bl-fot1,
+.bl-fot2 {
     display: flex;
     justify-content: space-between;
+    width: 80%;
     margin: 5% 0 0 0;
 }
 
 
-.btn-foot a {
+.btns-foot a {
     text-decoration: none;
     color: white;
     font-size: 14px;
@@ -461,20 +627,21 @@ h1 {
 /* foot email */
 
 .foot_email {
-    width: 350px;
+    height: 100%;
+    width: 30%;
 }
 
 .foot-inf {
-    height: 42px;
-    width: 350px;
+    height: 10%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
 }
 
 .input-foot {
-    width: 210px;
-    height: 42px;
+    width: 80%;
+    height: 5vh;
     color: white;
     background-color: rgba(255, 255, 255, 0.503);
     border: 0;
@@ -483,10 +650,13 @@ h1 {
 .button-foot {
     background: #0F0F0F;
     color: white;
-    width: 140px;
-    height: 42px;
+    width: 30%;
+    font-size: 10px;
+    height: 5vh;
     border: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .foot-sup-us {
@@ -495,3 +665,54 @@ h1 {
     font-size: 14px;
     line-height: 21px;
 }
+
+@media (max-width: 620px) {
+    .footer .col-title{
+        font-size: 18px;
+    }
+
+    .button-foot{
+        font-size:6px;
+        height: auto;
+        align-items: center;
+        margin: 1%;
+    }
+
+    .foot-inf{
+        width: 90%;
+        height: auto;
+        
+    }
+
+    .bl-fot1,
+    .bl-fot2{
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .foot-sup-us{
+        font-size: 12px;
+    }
+
+    
+
+    .col-title{
+        font-size: 18px;
+    } 
+}
+
+@media (max-width:591px) {
+    .button-foot{
+        font-size: 3px;
+    }
+
+    .footer .col-title{
+        font-size: 15px;
+    }
+    
+}
+
